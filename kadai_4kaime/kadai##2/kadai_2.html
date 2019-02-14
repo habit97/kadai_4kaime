@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="ex">
+        <p>あいうえお</p>
+        <p>かきくけこ</p>
+        <p>さしすせそ</p>
+    </div>
+
+<script>
+    //フェードイン表示
+    $(document).ready(function(){$("#ex").hide().fadeIn(4000)});
+    //文字を白色
+    $("#ex").css("color","white");
+    //背景を黒色
+    $("#ex").css("backgroundColor","black")
+    //偶数行だけ背景を白
+  
+</script>
+
+</body>
+</html>

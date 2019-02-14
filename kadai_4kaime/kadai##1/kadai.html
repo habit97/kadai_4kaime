@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="kadai.css">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <br>
+    <h1>おみくじ</h1>
+    <div id='a'><img src="omik.jpeg"></div><br>
+    <div class='b'><button class="b" type="submit" onClick="location.href='result.html'" style="font-size:1.4em">おみくじを振る</button></div>
+    <div id='c'><p>↑↑↑ボタンをクリック↑↑↑</p></div>
+     
+<script>
+   $(document).ready(function(){$('h1').hide().fadeIn(2000)});
+   $(document).ready(function(){$('#a').hide().fadeIn(4000)});
+   $(document).ready(function(){$('.b').hide().fadeIn(6000)});
+   $(document).ready(function(){$('#c').hide().fadeIn(8000)});
+</script>
+    
+</body>
+</html>

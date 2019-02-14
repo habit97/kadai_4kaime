@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <div class="a">
+    <h1>本日の運勢は...</h1>
+    <img class="random" src="daikiti.jpeg" alt="画像" />
+  </div>
+  <div class="b"><a href="kadai.html">もう一度振る</a></div>
+<script>
+var images = [
+  'daikiti.jpeg',
+  'chukiti.jpg',
+  'syokiti.jpg',
+  'suekiti.jpg',
+  'kyou.png'
+];
+var randImg = images[Math.floor(Math.random() * images.length)];
+$('.random').attr('src', randImg);
+
+$(document).ready(function(){$('.random').hide().fadeIn(2000)});
+
+</script>
+    
+</body>
+</html>
